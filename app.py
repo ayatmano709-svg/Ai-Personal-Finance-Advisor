@@ -62,8 +62,7 @@ with col3:
     st.subheader("🤖 3. Machine Learning Future Expense Prediction")
     st.write("Using *Linear Regression* to project your next 3 months' expenses based on current trend coefficients.")
     
-    # Feature: Linear Regression Prediction Engine (Simulated 4-month historical trend to project future)
-    # X = Months (1, 2, 3, 4), Y = Expenses (Simulated slightly lower/higher historical trends based on current)
+    # Feature: Linear Regression Prediction Engine
     months = np.array([1, 2, 3, 4]).reshape(-1, 1)
     historical_expenses = np.array([total_expenses*0.9, total_expenses*0.95, total_expenses*1.02, total_expenses]).reshape(-1, 1)
     
